@@ -47,9 +47,3 @@ public class Scope {
 	}
 
 }
-
-//columndriver.findElements(By.tagName("a")).get(i).click();
-//Thread.sleep(2000);
-//System.out.println(driver.getTitle());
-//Thread.sleep(2000);
-//driver.navigate().back();
