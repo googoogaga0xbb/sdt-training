@@ -30,19 +30,23 @@ public class Scope {
 		
 		//4. Click on each link in the column and check if the pages are opening
 		for (int i=1;i<columndriver.findElements(By.tagName("a")).size(); i++) {
+			//Set<String> windows = driver.getWindowHandles(); // [parentID,childID]
+			//Iterator<String> it = windows.iterator();
+			//String parentId = it.next();
+			//driver.switchTo().window(parentId);
 			String clickonLinkTab = Keys.chord(Keys.CONTROL,Keys.ENTER);
 			columndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonLinkTab);
-			Thread.sleep(5000);
-			Set<String> windows = driver.getWindowHandles();
-			Iterator<String> it = windows.iterator();
-			
-			while(it.hasNext()) {
-				driver.switchTo().window(it.next());
-				System.out.println(driver.getTitle());
-				
-			}
-					
+			Thread.sleep(5000L);
 		}
+		
+		Set<String> windows = driver.getWindowHandles();
+		Iterator<String> it = windows.iterator();
+		
+		while(it.hasNext()) {
+			driver.switchTo().window(it.next());
+			System.out.println(driver.getTitle());
+		}
+				
 		
 	}
 
