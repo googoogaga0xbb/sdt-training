@@ -27,5 +27,10 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Desktop/QA Path/Projects-Eclipse/commons-io-2.11.0/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Desktop/QA Path/Projects-Eclipse/commons-io-2.11.0/commons-io-2.11.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Desktop/QA Path/Projects-Eclipse/commons-io-2.11.0/commons-io-2.11.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Desktop/QA Path/Projects-Eclipse/commons-io-2.11.0/commons-io-2.11.0-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Desktop/QA Path/Projects-Eclipse/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
