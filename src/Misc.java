@@ -7,13 +7,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.commons.io.FileUtils;
 
 public class Misc {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ivan\\Desktop\\QA Path\\Projects-Eclipse\\ChromeDriver.exe");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\ivan\\Desktop\\QA Path\\Projects-Eclipse\\GeckoDriver.exe");
+		WebDriver driver = new FirefoxDriver();
 		//Maximize Window
 		driver.manage().window().maximize();
 		
